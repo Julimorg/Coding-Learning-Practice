@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class bai0010    {
+
     public static void main(String[] args) {
         int app,stu;
         Scanner sc = new Scanner(System.in);
