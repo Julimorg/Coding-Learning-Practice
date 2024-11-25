@@ -9,6 +9,24 @@ public class Account {
     private String number;
     private double balance;
 
+    //? Default Constructor
+    public Account()
+    {
+        this("131", "hello" ,"ij2i@gmail.com","dqowd",31.1);
+        System.out.print("Empty constructor called");
+    }
+    //?  Constructor parametized
+    public Account(String number, String customerName, String customerEmail, String customerPhone,double balance)
+    {
+        System.out.print("Account constructor called");
+        this.balance = balance;
+        this.customerName = customerName;
+        this.customerEmail = customerEmail;
+        this.customerPhone = customerPhone;
+        this.number = number;
+    }
+
+
 
     public String getCustomerName() {
         return customerName;
