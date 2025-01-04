@@ -5,6 +5,10 @@ public class Animal {
     private String size;
     private double weight;
 
+    public Animal()
+    {
+
+    }
     public Animal(String type, double weight, String size) {
         this.type = type;
         this.weight = weight;
