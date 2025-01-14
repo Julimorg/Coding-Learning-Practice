@@ -1,21 +1,34 @@
-package JavaMasterClassCoursePractice.Section7_OOP_Inheritance;
+package JavaMasterClassCoursePractice.StringFormatting;
 
 public class StringFormatting {
     public static void main(String[] args) {
-        printInformation("Hello Worrld");
+        printInformation("Hello World");
         printInformation(" ");
         printInformation("\t  \n");
 
         String helloworld = "Hello World";
+        //? indexOf and lastIndexOf
         System.out.printf("index of r =  %d %n",helloworld.indexOf('r'));
         System.out.printf("index of World =  %d %n",helloworld.indexOf("World"));
         System.out.printf("index of l =  %d %n",helloworld.indexOf('l'));
         System.out.printf("index of l =  %d %n",helloworld.lastIndexOf('r'));
-        System.out.printf("index of l =  %d %n",helloworld.indexOf('r',10));
+        System.out.printf("index of l =  %d %n",helloworld.indexOf('r',9));
+        //? UpperCase and LowerCase
+        String helloWorldLower = helloworld.toLowerCase();
+        //? Compare String
+        if(helloworld.equals(helloWorldLower))
+        {
+            System.out.println("Valid");
+        }
+        if(helloworld.equalsIgnoreCase(helloworld))
+        {
+            System.out.println("Valid ignores");
+        }
 
 
 
     }
+    //? Check empty String
     public static void printInformation(String string)
     {
         int length = string.length();
