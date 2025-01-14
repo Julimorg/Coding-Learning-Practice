@@ -1,7 +1,10 @@
 package JavaMasterClassCoursePractice.StringFormatting;
 
+import java.util.LinkedList;
+
 public class StringBuilderFormattng {
     public static void main(String[] args) {
+
         String helloWorld =  "Hello" + "World";
         String full = helloWorld.concat("and GoodBye");
         StringBuilder helloWorldBuilder = new StringBuilder("Hello " + "World");
