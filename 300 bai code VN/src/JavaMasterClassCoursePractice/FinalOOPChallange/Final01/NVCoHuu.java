@@ -1,7 +1,7 @@
 package JavaMasterClassCoursePractice.FinalOOPChallange.Final01;
 
-public class GVCoHuu extends LDBienChe{
-    private double hsThamNien;
+public class NVCoHuu extends LDBienChe implements XetKhenThuong{
+    private int soGioLamThem;
 
     @Override
     public double tinhLuong(){
@@ -17,4 +17,8 @@ public class GVCoHuu extends LDBienChe{
 
     }
 
+    @Override
+    public double tinhKhenThuong() {
+        return 0;
+    }
 }
