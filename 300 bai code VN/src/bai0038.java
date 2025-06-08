@@ -7,12 +7,11 @@ public class bai0038 {
         {
             return false;
         }
-        for ( int i = 2; i <= Math.sqrt(n); i++ )
+        for ( int i = 2; i < n; i++ )
         {
-            if ( n % i == 0)
-            {
-                return false;
-            }
+           if ( i * i == n){
+               return true;
+           }
         }
         return true;
     }
@@ -20,19 +19,7 @@ public class bai0038 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
-        int count = 0;
-        for ( int i = 1 ;  ; i++ )
-        {
-            if (countPrime(i))
-            {
-                count++;
-                System.out.print(i + " ");
-            }
-            if ( count == a)
-            {
-                break;
-            }
-        }
+        System.out.println(countPrime(a));
     }
 
 }
