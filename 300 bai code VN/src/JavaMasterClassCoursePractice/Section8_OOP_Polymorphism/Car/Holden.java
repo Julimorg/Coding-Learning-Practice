@@ -1,24 +1,21 @@
 package JavaMasterClassCoursePractice.Section8_OOP_Polymorphism.Car;
 
-public class Mitsubishi extends Car{
-
-    public Mitsubishi(int cylinders, String name) {
+public class Holden extends Car{
+    public Holden(int cylinders, String name) {
         super(cylinders, name);
     }
-
-
     @Override
     public String startEngine() {
-        return "Mitsubishi -> startEngine()";
+        return "Holden -> startEngine()";
     }
 
     @Override
     public String accelerate() {
-        return "Mitsubishi -> accelerate()";
+        return "Holden -> accelerate()";
     }
 
     @Override
     public String brake() {
-        return "Mitsubishi -> brake()";
+        return "Holden -> brake()";
     }
 }

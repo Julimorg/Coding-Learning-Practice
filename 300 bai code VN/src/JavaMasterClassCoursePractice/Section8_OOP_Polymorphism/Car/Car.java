@@ -9,31 +9,27 @@ public class Car {
     public Car(int cylinders, String name){
         this.cylinders = cylinders;
         this.name = name;
+        this.engine = true;
+        this.wheels = 4;
     }
 
     public int getCylinders() {
         return cylinders;
     }
 
-    public void setCylinders(int cylinders) {
-        this.cylinders = cylinders;
-    }
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
 
-    public void startEngine(){
-        System.out.println("The car's engine is starting");
+    public String startEngine(){
+       return "The car's engine is starting";
     }
-    public void accelerate(){
-        System.out.println("The car is accelerating");
+    public String accelerate(){
+        return "The car is accelerating";
     }
-    public void brake(){
-        System.out.println("The car is braking");
+    public String brake(){
+        return "The car is braking";
     }
 }
