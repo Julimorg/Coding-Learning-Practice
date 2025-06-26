@@ -10,9 +10,9 @@ public class Practice6_5 {
             int leng = sc.nextInt();
             System.out.print(Arrays.toString(getRandomArray(leng)));
     }
-    public static int[] sortIntegers(int[] array){
-
-    }
+//    public static int[] sortIntegers(int[] array){
+//
+//    }
     public static int[] getRandomArray(int len){
         Random random = new Random();
         int[] randomArray = new int[len];
